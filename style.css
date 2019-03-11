@@ -27,6 +27,8 @@ GRID
 
 body {
     background: #fff;
+    font-family: "Montserrat", "Open Sans", sans-serif, arial;
+    font-weight: 300;
 }
 
 /*
@@ -36,11 +38,48 @@ TOP-LINE
 */
 
 .top-line {
+    font-size: 25px;
     width: 100%;
     height: 60px;
     padding: 15px;
 }
 
+    /*icons*/
+
 .top-icons {
     float: right;
+}
+
+.social-icons {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.mail-icon {
+    background-image: url(portfolio-images/icons/mail-black-24.png);  
+}
+
+.mail-icon:hover {
+    background-image: url(portfolio-images/icons/mail-white-24.png);
+    transition: .2s;
+}
+
+.github-icon {
+    background-image: url(portfolio-images/icons/github-black-24.png);
+}
+
+.github-icon:hover {
+    background-image: url(portfolio-images/icons/github-white-24.png);
+    transition: .2s;
+}
+
+.facebook-icon {
+    background-image: url(portfolio-images/icons/facebook-black-24.png);
+}
+
+.facebook-icon:hover {
+    background-image: url(portfolio-images/icons/facebook-white-24.png);
+    transition: .2s;
 }
