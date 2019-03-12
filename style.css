@@ -76,28 +76,28 @@ TOP-LINE
 /*----------------------*/
 
 .mail-icon {
-    background-image: url(portfolio-images/icons/mail-black-48.png);  
+    background-image: url(portfolio-images/icons/mail-white-48.png);  
 }
 .mail-icon:hover {
-    background-image: url(portfolio-images/icons/mail-white-48.png);
+    background-image: url(portfolio-images/icons/mail-black-48.png);
 }
 
 /*----------------------*/
 
 .github-icon {
-    background-image: url(portfolio-images/icons/github-black-50.png);
+    background-image: url(portfolio-images/icons/github-white-50.png);
 }
 .github-icon:hover {
-    background-image: url(portfolio-images/icons/github-white-50.png);
+    background-image: url(portfolio-images/icons/github-black-50.png);
 }
 
 /*----------------------*/
 
 .facebook-icon {
-    background-image: url(portfolio-images/icons/facebook-black-50.png);
+    background-image: url(portfolio-images/icons/facebook-white-50.png);
 }
 .facebook-icon:hover {
-    background-image: url(portfolio-images/icons/facebook-white-50.png);
+    background-image: url(portfolio-images/icons/facebook-black-50.png);
 }
 
 /*----------------------*/
