@@ -28,6 +28,7 @@ GRID
 body {
     background: #fff;
     font-family: "Montserrat", "Open Sans", sans-serif, arial;
+    color: #777777;
     font-weight: 300;
 }
 
@@ -38,16 +39,29 @@ TOP-LINE
 */
 
 .top-line {
-    font-size: 25px;
     width: 100%;
-    height: 60px;
-    padding: 15px;
+    font-size: 25px;
+    padding: 10px 10%;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.top-line span {
+    padding-right: 3%;
 }
 
     /*icons*/
 
 .top-icons {
     float: right;
+/*    margin-top: -13px;*/
+    padding: 2px 4px;
+    line-height: 0;
+    border-radius: 10px;
+}
+
+.top-icons:hover {
+    box-shadow: 0 0 2px rgb(82, 82, 82);
+    transition: .5s;
 }
 
 .social-icons {
@@ -55,31 +69,57 @@ TOP-LINE
     height: 24px;
     display: inline-block;
     background-repeat: no-repeat;
+    background-size: cover;
+    transition: .2s;
 }
+
+/*----------------------*/
 
 .mail-icon {
-    background-image: url(portfolio-images/icons/mail-black-24.png);  
+    background-image: url(portfolio-images/icons/mail-black-48.png);  
+}
+.mail-icon:hover {
+    background-image: url(portfolio-images/icons/mail-white-48.png);
 }
 
-.mail-icon:hover {
-    background-image: url(portfolio-images/icons/mail-white-24.png);
-    transition: .2s;
-}
+/*----------------------*/
 
 .github-icon {
-    background-image: url(portfolio-images/icons/github-black-24.png);
+    background-image: url(portfolio-images/icons/github-black-50.png);
+}
+.github-icon:hover {
+    background-image: url(portfolio-images/icons/github-white-50.png);
 }
 
-.github-icon:hover {
-    background-image: url(portfolio-images/icons/github-white-24.png);
-    transition: .2s;
-}
+/*----------------------*/
 
 .facebook-icon {
-    background-image: url(portfolio-images/icons/facebook-black-24.png);
+    background-image: url(portfolio-images/icons/facebook-black-50.png);
+}
+.facebook-icon:hover {
+    background-image: url(portfolio-images/icons/facebook-white-50.png);
 }
 
-.facebook-icon:hover {
-    background-image: url(portfolio-images/icons/facebook-white-24.png);
-    transition: .2s;
+/*----------------------*/
+
+/*
+========
+TOP-NAVIGATION
+========
+*/
+
+.top-nav {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.top-nav li {
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.top-nav li:hover {
+    color: black;
 }
