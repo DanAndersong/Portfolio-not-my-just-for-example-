@@ -49,6 +49,11 @@ TOP-LINE
     padding-right: 3%;
 }
 
+.top-phone-number:before {
+    content: url(portfolio-images/icons/phone-white-32.png);
+    float: left;
+}
+
     /*icons*/
 
 .top-icons {
@@ -118,6 +123,7 @@ TOP-NAVIGATION
 .top-nav li {
     display: inline-block;
     padding: 20px 40px;
+    letter-spacing: 1.5px;
 }
 
 .top-nav li:hover {
