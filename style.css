@@ -27,9 +27,10 @@ GRID
 
 body {
     background: #fff;
+    background-size: cover;
     font-family: "Montserrat", "Open Sans", sans-serif, arial;
-    color: #777777;
     font-weight: 300;
+    filter: grayscale(0);
 }
 
 /*
@@ -39,10 +40,13 @@ TOP-LINE
 */
 
 .top-line {
+    color: #fff;
+    font-weight: 200;
     width: 100%;
     font-size: 25px;
-    padding: 10px 10%;
+    padding: 10px 7%;
     border-bottom: 1px solid #d8d8d8;
+    background: #000;
 }
 
 .top-line span {
@@ -58,15 +62,9 @@ TOP-LINE
 
 .top-icons {
     float: right;
-/*    margin-top: -13px;*/
     padding: 2px 4px;
     line-height: 0;
     border-radius: 10px;
-}
-
-.top-icons:hover {
-    box-shadow: 0 0 2px rgb(82, 82, 82);
-    transition: .5s;
 }
 
 .social-icons {
@@ -75,34 +73,35 @@ TOP-LINE
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: .2s;
+    transition: .25s;
 }
 
 /*----------------------*/
 
 .mail-icon {
-    background-image: url(portfolio-images/icons/mail-white-48.png);  
+    background-image: url(portfolio-images/icons/mail-black-48.png);
+    background-size: 24px;
 }
 .mail-icon:hover {
-    background-image: url(portfolio-images/icons/mail-black-48.png);
+    background-image: url(portfolio-images/icons/mail-white-48.png);
 }
 
 /*----------------------*/
 
 .github-icon {
-    background-image: url(portfolio-images/icons/github-white-50.png);
+    background-image: url(portfolio-images/icons/github-black-50.png);
 }
 .github-icon:hover {
-    background-image: url(portfolio-images/icons/github-black-50.png);
+    background-image: url(portfolio-images/icons/github-white-50.png);
 }
 
 /*----------------------*/
 
 .facebook-icon {
-    background-image: url(portfolio-images/icons/facebook-white-50.png);
+    background-image: url(portfolio-images/icons/facebook-black-50.png);
 }
 .facebook-icon:hover {
-    background-image: url(portfolio-images/icons/facebook-black-50.png);
+    background-image: url(portfolio-images/icons/facebook-white-50.png);
 }
 
 /*----------------------*/
@@ -113,19 +112,26 @@ TOP-NAVIGATION
 ========
 */
 
+ #nav-selected {
+    color: black;
+}
+
 .top-nav {
     width: 100%;
     text-align: center;
     font-size: 30px;
     font-weight: 200;
+    color: #a3a3a3;
 }
 
 .top-nav li {
     display: inline-block;
+    margin-top: 10px;
     padding: 20px 40px;
     letter-spacing: 1.5px;
 }
 
-.top-nav li:hover {
+.top-nav a:hover {
     color: black;
+    transition: .25s;
 }
