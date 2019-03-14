@@ -183,9 +183,3 @@ MAIN
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
-.building-conference {
-    background-image: url(portfolio-images/projects-images/building-conference.jpg);
-    background-size: cover;
-    background-repeat: no-repeat
-}
