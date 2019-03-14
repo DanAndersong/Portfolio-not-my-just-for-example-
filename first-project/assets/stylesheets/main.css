@@ -705,3 +705,28 @@ tbody td:only-of-type {
     padding-right: 0;
     padding-left:  0;
 }
+
+/*
+=================
+Кнопка возврата в портфолио
+=================
+*/
+
+#portfolio-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: black;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#portfolio-button img {
+    float: left;
+    height: 48px;
+    width: 40px;
+}
