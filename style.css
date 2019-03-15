@@ -14,6 +14,8 @@ a:visited {
     color: inherit;
 }
 
+/*=====*/
+
 .clearfix::before,
 .clearfix::after {
 content: "";
@@ -29,11 +31,7 @@ clear: both;
 *zoom: 1;
 }
 
-/*
-==========
-GRID
-==========
-*/
+/*=====*/
 
 .grid {
     width: 80%;
@@ -45,23 +43,26 @@ body {
     background-size: cover;
     font-family: "Montserrat", "Open Sans", sans-serif, arial;
     font-weight: 300;
-    filter: grayscale(0);
 }
 
+
+
 /*
-========
-TOP-LINE
-========
+==================================
+HOME PAGE
+==================================
 */
+
+/*TOP-LINE*/
 
 .top-line {
     color: #fff;
-    font-weight: 200;
+    font-weight: 400;
     width: 100%;
     font-size: 25px;
     padding: 10px 15%;
     border-bottom: 1px solid #d8d8d8;
-    background: #000;
+    background: rgb(0, 0, 0);
 
 }
 
@@ -93,7 +94,7 @@ TOP-LINE
     display: inline-block;
     width: 10%;
     padding: 5px;
-    font-weight: 400
+    font-weight: 200;
 }
 
 /*----------------------*/
@@ -120,11 +121,9 @@ TOP-LINE
 }
 /*----------------------*/
 
-/*
-========
-TOP-NAVIGATION
-========
-*/
+
+/*TOP-NAVIGATION*/
+
 
  #nav-selected {
     color: black;
@@ -150,11 +149,7 @@ TOP-NAVIGATION
     transition: .25s;
 }
 
-/*
-========
-MAIN
-========
-*/
+/*MAIN*/
 
 .main {
     padding: 20px;
@@ -175,7 +170,8 @@ MAIN
 }
 
 .preview-project:hover {
-    box-shadow: 0 0 50px rgba(0,0,0, .3);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.22);
+    transition: .2s;
 }
 
 .preview-description {
@@ -198,4 +194,52 @@ MAIN
     height: 50%;
     transition: 1s;
     background: rgba(0, 0, 0, 0.65);
+}
+
+
+/*
+==================================
+ABOUT-PAGE
+==================================
+*/
+
+.about-main {
+    border-top: 1px solid;
+    padding-top: 30px
+}
+
+.about {
+    float: left;
+    width: 70%;
+    min-width: 300px;
+    margin: 0 30px;
+    padding: 0 20px;
+}
+
+.about-do {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.about-date {
+    
+}
+.my-photo {
+    float: left;
+    width: 320px;
+    min-width: 320px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.my-photo p {
+    padding: 10px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.my-photo img {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 40px;
 }
