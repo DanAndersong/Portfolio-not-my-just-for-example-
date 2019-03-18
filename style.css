@@ -202,21 +202,38 @@ HOME PAGE
 ABOUT-PAGE
 ==================================
 */
-    
+
 .about {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row nowrap;
+    flex-flow: row wrap; /*строчно-перенос*/
+    justify-content: space-around; /*по краям без отступов*/
+    line-height: 25px;
 }
 
-article {
-    padding: 10px;
+.about-me {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    background: red;
     margin: 10px;
-    background: brown;
-    flex: 1;
+    font-size: 110%;
+    font-weight: 200;
 }
 
-article:nth-of-type(2) {
-  flex: 4 130px;
+.about-me img {
+    width: 220px;
+    border-radius: 25px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.about-job {
+    display: flex;
+    flex-flow: column nowrap;
+    background: brown;
+    margin: 10px;
+}
+.about-job article {
+    background: blue;
+    margin: 10px;
 }
