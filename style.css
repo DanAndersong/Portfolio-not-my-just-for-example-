@@ -3,9 +3,9 @@
 *:before {
     margin: 0;
     padding: 0;
--webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a,
@@ -18,17 +18,17 @@ a:visited {
 
 .clearfix::before,
 .clearfix::after {
-content: "";
-display: table;
+    content: "";
+    display: table;
 }
 
 .clearfix::after {
-clear: both;
+    clear: both;
 }
 
 .clearfix {
-clear: both;
-*zoom: 1;
+    clear: both;
+    *zoom: 1;
 }
 
 /*=====*/
@@ -71,7 +71,7 @@ HOME PAGE
     font-weight: 300;
 }
 
-    /*icons*/
+/*icons*/
 
 .top-icons {
     float: right;
@@ -86,19 +86,20 @@ HOME PAGE
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: .3s;
     border-radius: 5px;
 }
-
 
 /*----------------------*/
 .mail-icon {
     background-image: url(portfolio-images/icons/mail-black-48.png);
-    background-size: 24px;
+
 }
+
 .mail-icon:hover {
     background-image: url(portfolio-images/icons/mail-grey-48.png);
+    transition: .3s;
 }
+
 /*----------------------*/
 .github-icon {
     background-image: url(portfolio-images/icons/github-black-50.png);
@@ -106,23 +107,26 @@ HOME PAGE
 
 .github-icon:hover {
     background-image: url(portfolio-images/icons/github-grey-50.png);
-    
+    transition: .3s;
 }
+
 /*----------------------*/
 .facebook-icon {
     background-image: url(portfolio-images/icons/facebook-black-50.png);
 }
+
 .facebook-icon:hover {
     background-image: url(portfolio-images/icons/facebook-grey-50.png);
-    
+    transition: .3s;
 }
+
 /*----------------------*/
 
 
 /*TOP-NAVIGATION*/
 
 
- #nav-selected {
+#nav-selected {
     color: black;
 }
 
@@ -156,7 +160,7 @@ HOME PAGE
 
 .preview-project {
     position: relative;
-    width: 350px; 
+    width: 350px;
     height: 250px;
     margin: 25px;
     border-radius: 30px;
@@ -191,6 +195,7 @@ HOME PAGE
     transition: 1s;
     background: rgba(0, 0, 0, 0.65);
 }
+
 .preview-description p {
     margin-top: 15px;
     border-top: 1px solid #767676;
@@ -209,17 +214,6 @@ ABOUT-PAGE
     flex-flow: row wrap;
     justify-content: space-around;
     line-height: 30px;
-}
-
-.about h2 {
-    font-weight: 400;
-    font-size: 30px;
-}
-
-.about-date {
-    font-style: italic;
-    font-size: 14px;
-    letter-spacing: 2px;
 }
 
 .about-info {
@@ -242,8 +236,76 @@ ABOUT-PAGE
     flex-flow: column nowrap;
 }
 
+.about h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.about-date {
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
 .about-job article {
     margin-bottom: 40px;
     padding: 10px;
     border-bottom: 1px solid #dbdbdb;
+}
+
+/*
+==================================
+CONTACT-PAGE
+==================================
+*/
+
+.contact h2 {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 13px 50px;
+    margin: 13px 100px;
+    border-left: 1px solid #d3d3d3;
+}
+
+.contact h2:hover {
+    border-left: 1px solid #888888;
+    transition: .3s;
+}
+
+.contact h2 a {
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.contact h2 a:hover {
+    color: #979fd0;
+}
+
+.phone::before,
+.e-mail::before,
+.github::before,
+.facebook::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 0 20px;
+}
+
+.phone::before {
+    background-image: url(portfolio-images/icons/phone-black-52.png);
+}
+
+.e-mail::before {
+    background-image: url(portfolio-images/icons/email-white-50.png);
+}
+
+.github::before {
+    background-image: url(portfolio-images/icons/github-white-50.png);
+}
+
+.facebook::before {
+    background-image: url(portfolio-images/icons/facebook-white-50.png);
 }
