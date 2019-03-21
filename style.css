@@ -97,7 +97,7 @@ HOME PAGE
     background-size: 24px;
 }
 .mail-icon:hover {
-    background-image: url(portfolio-images/icons/mail-black-488.png);
+    background-image: url(portfolio-images/icons/mail-grey-48.png);
 }
 /*----------------------*/
 .github-icon {
@@ -105,7 +105,7 @@ HOME PAGE
 }
 
 .github-icon:hover {
-    background-image: url(portfolio-images/icons/github-black-505.png);
+    background-image: url(portfolio-images/icons/github-grey-50.png);
     
 }
 /*----------------------*/
@@ -113,7 +113,7 @@ HOME PAGE
     background-image: url(portfolio-images/icons/facebook-black-50.png);
 }
 .facebook-icon:hover {
-    background-image: url(portfolio-images/icons/facebook-black-505.png);
+    background-image: url(portfolio-images/icons/facebook-grey-50.png);
     
 }
 /*----------------------*/
