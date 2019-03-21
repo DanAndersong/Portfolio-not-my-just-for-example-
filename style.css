@@ -236,7 +236,7 @@ ABOUT-PAGE
     flex-flow: column nowrap;
 }
 
-.about h2 {
+.headline {
     font-weight: 400;
     font-size: 30px;
 }
@@ -260,8 +260,6 @@ CONTACT-PAGE
 */
 
 .contact h2 {
-    font-weight: 400;
-    font-size: 30px;
     padding: 13px 50px;
     margin: 13px 100px;
     border-left: 1px solid #d3d3d3;
