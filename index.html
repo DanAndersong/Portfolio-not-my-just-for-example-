@@ -1,31 +1,83 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-    <header class="grid">
+<!--
+      КНОПКА ВОЗВРАТА В ПОРТФОЛИО
+    <a href="../index.html"><div id="portfolio-button"> <img class="portfolio-button-img" src="assets/stylesheets/images/portfolio%20button.png" alt=""><span>Вернуться<br> к портфолио</span></div></a>
     
-<!--       TOP-LINE-->
-        <div class="top-line">
-            <span class="top-number">+7(996)-559-6592</span>
-            <div class="top-icons">
-                <a href="#"><img src="portfolio-images/icons/facebook.png" alt=""></a>
-                <a href="#"><img src="portfolio-images/icons/github.png" alt=""></a>
-                <a href="#"><img src="portfolio-images/icons/mail.png" alt=""></a>
+<style>
+    #portfolio-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: black;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#portfolio-button img {
+    float: left;
+    height: 48px;
+    width: 40px;
+}
+</style>
+-->
+    <header>
+<!--        TOP-LINE-->
+        <div class="top-line clearfix">
+               <span>Denis Andrusenko</span>
+               <div class="small-block">Front-end development</div>
+               <div class="top-icons">
+               <a href="#" class="facebook-icon social-icons" target="_blank" title="Facebook"></a><!--
+            --><a href="#" class="mail-icon social-icons" target="_blank" title="Gmail"></a><!--
+            --><a href="#" class="github-icon social-icons" target="_blank" title="Github"></a>
             </div>
         </div>
         
 <!--        TOP-NAVIGATION-->
-        <nav class="top-nav">
-            <ul>
-                <li>О себе</li>
-                <li>Главная</li>
-            </ul>
-        </nav>
+        <div class="grid"> 
+            <nav class="top-nav">
+                <ul>
+                    <li><a id="nav-selected" href="index.html">Главная</a></li><!--
+                 --><li><a href="About.html">Обо мне</a></li><!--
+                 --><li><a href="Contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <section class="grid main clearfix">
+        <a href="#">
+            <article class="preview-project">
+                <div class="preview-description">Частная клиника &darr;
+                    <p>Задача: обучение, изготовление сайта с использованием CSS3 и HTML5, технологии flex-box.</p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="preview-project">
+                <div class="preview-description">
+
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="preview-project">
+                <div class="preview-description">
+
+                </div>
+            </article>
+        </a>
+    </section>
 </body>
 </html>
