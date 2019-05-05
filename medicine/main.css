@@ -1,0 +1,437 @@
+*,
+*:after,
+*:before {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    font-style: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif, Arial;
+    font-weight: 300;
+    /* height: 100%; */
+    background: #f1f1f1;
+    min-width: 730px;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+#nav-visit {
+    background: linear-gradient(#5cc0ff, #75c9ff);
+    box-shadow: inset -1px -2px 12px rgba(0,0,0, .07);
+}
+
+#list-visit {
+    box-shadow: 0px 1px 0 0 rgba(92, 192, 255, .5);
+    color: #000000;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+i {
+    width: 30px;
+}
+
+/*
+==============
+TOP-PAGE
+==============
+*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+
+.head-block {
+    background: #5cc0ff;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #1ab0f4;
+    color: #f1f1f1;
+}
+
+    /*logo*/
+
+.logo {
+    padding: 10px 15px;
+    font-size: 55px;
+    font-family: "Cinzel", sans-serif, Arial;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .50);
+    white-space: nowrap;
+    border-left: 5px solid #f1f1f1;
+    border-right: 5px solid #f1f1f1;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.logo-name {
+    display: inline-block;
+    line-height: 1;
+}
+
+.last-name {
+    bottom: 0;
+    right: 0;
+    display: block;
+    text-align: right;
+}
+
+.logo:hover {
+    background: rgb(106, 197, 255);
+    transition: .3s ease;
+}
+
+.small-caps { 
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+    /*address*/
+
+.head-block h4 {
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.44);
+    text-transform: capitalize;
+}
+
+    /*head navigation*/
+
+.mainnav,
+.mainnav ul,
+.mainnav li{
+    display: flex;
+}
+
+.mainnav {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.mainnav li {
+    padding: 0 15px;
+}
+
+.mainnav ul li:hover {
+    background: linear-gradient(#5cc0ff, #75c9ff);
+    box-shadow: inset -1px -2px 12px rgba(0,0,0, .07);
+}
+
+.mainnav a {
+    padding: 35px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+    /*content*/
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #454545;
+}
+
+.head-img {
+    margin: auto;
+    width: 700px;
+    height: 360px;
+}
+
+.panel-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.headline-center {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.list { /*ul*/ 
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.list-item:hover { /*li*/           
+    box-shadow: 0px 1px 0 0 rgba(92, 192, 255, .5);
+    color: #000;
+}
+
+/*    about*/
+
+.about-us {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+    color: #454545;
+}
+
+.about-us article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 280px;
+    border-top: 3px solid #cfcfcf;
+    padding-bottom: 20px;
+}
+
+.about-us h3 {
+    height: 120px;
+}
+
+/*footer*/
+
+footer {
+    background: #009cff;
+    color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a:hover {
+    box-shadow: 0 1px 0 rgb(255, 255, 255);
+    transition: .1s ease-in-out;
+}
+
+.last-address {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap; 
+}
+
+.lastmenu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+
+.lastmenu,
+.last-address p {
+    padding: 10px;
+}
+
+.lastmenu li {
+    padding-bottom: 5px;
+}
+
+.copyright {
+    margin: auto;
+}
+
+/*
+============
+CONTACT-PAGE
+============
+*/
+
+.panel-1-2 {
+    padding-top: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.contacts p {
+    font-size: 30px;
+    color: #727272;
+}
+
+.contacts a:hover {
+    text-decoration: underline;    
+    color: #000;
+    transition: .1s ease-in-out;
+}
+
+.contacts h2 {
+    color: #454545;
+    padding: 20px 0;
+}
+
+.map iframe {
+    border: 1px solid #727272;
+}
+
+
+/*
+============
+SERVICES-PAGE
+============
+*/
+
+    /*first services page*/
+
+.services {
+    justify-content: center;
+}
+
+.services a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    overflow: hidden; 
+} 
+
+.services a:hover {
+    box-shadow: inset -1px -1px 10px rgba(0,0,0, .3);
+}
+
+.services img {
+    margin: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+/*MEDIA*/
+
+          
+/*button and list for services tables*/
+
+            @media screen and (max-width: 1137px) {
+                
+                .table-up {
+                    left: 5px;
+                    bottom: 260px;
+                    width: 40px;
+                    height: 135px;
+                    word-wrap: break-word;
+                }
+           }
+
+/*==================*/
+
+/*for tablets and medium desktop window*/
+                
+            @media screen and (max-device-width: 1024px),
+                   screen and (max-width: 1024px) {
+                
+                    .panel-list {
+                        zoom: 1.5;
+                    }   
+
+                    .mainnav {
+                        justify-content: center;
+                    }
+            }
+                
+/*for small desktop window and phone*/
+                
+            @media screen and (max-width: 750px),
+                   screen and (max-device-width: 480px) {
+            
+                    header {
+                        zoom: 1.5;              
+                    }
+                    
+                    footer {
+                        zoom: 3;
+                    }
+                    
+                
+                    .panel-list,
+                    .about-us {
+                        zoom: 2;    
+                    }
+
+                    .services,
+                    .contacts,
+                    .catalog {
+                        zoom: 1.5;
+                    }
+                    
+                    .logo,
+                    .head-block h4 {
+                        margin: 0 auto;
+                        width: 80%;
+                        min-width: 400px;
+                    }
+
+                    .head-block h4 {
+                        font-size: 30px;    
+                    }
+
+                    .mainnav {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+
+                    .mainnav ul {
+                        flex-direction: column;
+                    }
+
+                    .mainnav a {
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        border-top: 1px solid #93cbff;
+                    }
+           
+                   .head-img {
+                        display: none;
+                    }
+
+                   .lastmenu,
+                   .last-address {
+                       align-items: center;
+                       width: 100%;
+                   }
+                
+                   header div.container { 
+                        padding: 0;    
+                    }
+                
+                   footer {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                   }
+            }
