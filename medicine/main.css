@@ -22,7 +22,6 @@ li {
 body {
     font-family: "Roboto", sans-serif, Arial;
     font-weight: 300;
-    /* height: 100%; */
     background: #f1f1f1;
     min-width: 730px;
 }
@@ -39,6 +38,25 @@ body {
 #list-visit {
     box-shadow: 0px 1px 0 0 rgba(92, 192, 255, .5);
     color: #000000;
+}
+
+#portfolio-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: black;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#portfolio-button img {
+    float: left;
+    height: 48px;
+    width: 40px;
 }
 
 h2 {
