@@ -1,0 +1,219 @@
+/*
+===
+CONTENT
+===
+*/
+
+
+
+@media screen and (max-device-width: 560px) {
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .flex-col,
+    .article-preview {
+        zoom: 2;
+        padding: 0;
+        width: 100%;
+    }
+
+    /*page-name*/
+
+    .page-name {
+        padding: 15px 0;
+    }
+
+    .page-name div {
+        display: inline-block;
+    }
+
+    /*back-list for device*/
+
+    .back-list {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .back-list a {
+        color: #6e64c7;
+        text-decoration: underline;
+    }
+
+    /*index*/
+
+    .section-line {
+        margin: 5px 0;
+        zoom: 1.4;
+    }
+
+    .main-preview {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-preview span {
+        flex-grow: 1;
+        margin: auto;
+    }
+
+    .mini-containers a {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .main-preview img {
+        width: 80px;
+        height: 60px;
+    }
+
+    /* preview page (index/..)*/
+
+    .article-preview {
+        margin: 0 auto 10px auto;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .article-button {
+        margin-top: 0;
+        padding: 5px;
+        font-size: 8px;
+        text-align: center;
+        margin: 0 10px;
+        background: #f5f5f5;
+        color: #454545;
+        border: 1px solid #bababa;
+    }
+
+    .article-button:hover {
+        background: #a5a5a5;
+    }
+
+    .article-preview p {
+        display: none;
+    }
+
+    .article-preview img {
+        width: 100px;
+    }
+
+    .article-preview h2 {
+        font-size: 18px;
+    }
+
+    .article-description {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    /*article (index/../..)*/
+
+    .article-img {
+        float: none;
+        margin: 20px 13%;
+    }
+}
+
+/*
+===
+NAVIGATION
+===
+*/
+
+@media screen and (max-device-width: 560px) {
+
+    .label a {
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 10px;
+        padding: 25px 0;
+    }
+
+    /*    это действие создает темную линию в меню над 2 обьектом т.к. первый(переход на главную страницу) я скрыл.*/
+
+    .first-menu li:nth-child(2) {
+        border-top: 1px solid #434343;
+    }
+
+    /*sandwich-button*/
+
+    .button-menu-device {
+        display: block;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .button-line {
+        width: 52px;
+        padding: 3px;
+        margin: 6px auto;
+        border-radius: 1px;
+        background: #f5f5f5;
+    }
+
+    .button-menu-device:focus {
+        outline-width: 0;
+    }
+
+    .button-menu-device [class*='button-'] {
+        display: block;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .2s ease all;
+        transition: .2s ease all;
+    }
+
+    /*for oppen*/
+
+    .opened .line1 {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 15% 15%;
+        transform-origin: 15% 15%;
+    }
+
+    .opened .line2 {
+        opacity: 0;
+    }
+
+    .opened .line3 {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 15% 95%;
+        transform-origin: 15% 95%;
+    }
+
+    /*other nav*/
+
+    .navigation .first-menu,
+    .navigation li:first-child,
+    .navigation .second-menu li {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        width: 100%;
+    }
+
+    .first-menu a {
+        letter-spacing: 3px;
+        font-size: 30px;
+        padding: 40px 0;
+    }
+
+
+    /*
+===
+ADVERSITING
+===
+*/
+
+    .adver-block {
+        display: none;
+    }
+}

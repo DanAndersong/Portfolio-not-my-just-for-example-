@@ -1,0 +1,8 @@
+.adver-block {
+    display: none; /*flex or none*/ 
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background: #d8d8d8;
+}
