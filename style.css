@@ -212,8 +212,8 @@ ABOUT-PAGE
 
 .about {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     line-height: 30px;
     color: #454545;
 }
@@ -234,7 +234,7 @@ ABOUT-PAGE
 
 .about-job {
     display: flex;
-    align-items: center;
+    text-align: center;
     flex-flow: column nowrap;
 }
 
@@ -255,6 +255,9 @@ ABOUT-PAGE
     border-bottom: 1px solid #dbdbdb;
 }
 
+.test {
+    width: 100%;
+}
 /*
 ==================================
 CONTACT-PAGE
